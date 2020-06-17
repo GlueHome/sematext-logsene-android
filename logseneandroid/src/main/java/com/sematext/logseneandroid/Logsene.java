@@ -497,7 +497,7 @@ public class Logsene {
       // if user has specified some value for this field, we don't touch it
       if (!obj.has("meta")) {
         JSONObject metadata = new JSONObject();
-        metadata.put("versionName", getVersionName());
+//        metadata.put("versionName", getVersionName());
         metadata.put("versionCode", getVersionCode());
         metadata.put("osRelease", Build.VERSION.RELEASE);
         metadata.put("osType", "Android");
@@ -511,6 +511,8 @@ public class Logsene {
         }
         obj.put("meta", metadata);
       }
+
+      obj.put("version", getVersionName());
 
       // create a location out of lat and lon fields
       if (obj.has("lat") && obj.has("lon")) {

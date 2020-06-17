@@ -49,7 +49,7 @@ allprojects {
 }
 
 dependencies {
-    compile 'com.github.sematext:sematext-logsene-android:2.1.1'
+    compile 'com.github.GlueHome:sematext-logsene-android:2.4.0'
 }
 ```
 
